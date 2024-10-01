@@ -1,10 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-main > section div.caja1 {
-    border: 3px solid black;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    
 }
-main > section div.caja2 {
-    border: 3px solid black;
+
+section {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
 }
-main > section div.caja3 {
-    border: 3px solid black;
+
+.caja1,
+.caja2,
+.caja3 {
+    margin: auto;
+    display: block;
+    border: 1px solid black;
+    justify-items: center;
 }

@@ -83,3 +83,16 @@ divCaja3.appendChild(divTexto3)
 
 section.appendChild(divCaja3)
 
+// DESPLEGABLE
+
+const desplegable = document.createElement("select");
+
+const opciones = ["Italia", "México", "Frankfurt", "París", "San Francisco", "Los Ángeles"]
+
+opciones.forEach(opcion => {
+    const optionElement = document.createElement("option");
+    optionElement.value = opcion; // Establecer el valor de la opción
+    optionElement.textContent = opcion; // Establecer el texto que verá el usuario
+    desplegable.appendChild(optionElement); // Añadir la opción al <select>
+});
+section.appendChild(desplegable)
